@@ -1,0 +1,217 @@
+/*reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+	border:none;
+}
+
+/*start css*/
+#header {
+	width:100%;
+	height:60px;
+	position:fixed;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+
+	display:flex;
+}
+.i-blue {
+	color:#3f6ad8;
+}
+.header_logo {
+	width:20%;
+	height:inherit;
+	box-sizing: border-box;
+	padding:0 24px;
+
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.logo {
+	height:23px;
+	width:97px;
+	background-image: url('images/logo-inverse.png');
+}
+.sidebar_btn button {
+	background-color: white;
+}
+
+.header_banner {
+	width:80%;
+	height:inherit;
+	padding:0 24px;
+
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.header_banner-left {
+	width:420px;
+	height:inherit;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.header_banner-right {
+	width:400px;
+	height:inherit;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.search_btn {
+	height:42px;
+	width:42px;
+	background-color: rgba(0, 0, 0, 0.06);
+	border-radius: 24px;
+
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	margin-right:8px;
+}
+
+.header_link {
+	height:inherit;
+	box-sizing: border-box;
+	padding:0px 10px;
+	font-size: 14px;
+	color: #6c757d;
+	background-color: white;
+
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.menu_btn {
+	width:135px;
+}
+.settings_btn {
+	width:122px;
+}
+.settings_btn span {
+	width:22px;
+	height:22px;
+	background-color: #d92550;
+	border-radius:16px;
+	color:white;
+
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.projects_btn {
+	width:110px;
+}
+
+.header_icon_block {
+	width:208px;
+	display: flex;
+	justify-content: space-between;
+}
+.header_icon {
+	width:44px;
+	height:44px;
+	border-radius: 40px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.grid_btn {
+	background-color: rgba(63, 106, 216, 0.1);
+}
+.grid_btn i {
+	color:rgb(63, 106, 216);
+}
+.notify_btn {
+	background-color: rgba(217, 37, 80, 0.1);
+}
+.notify_btn i {
+	color:rgb(217, 37, 80);
+}
+.lan_btn {
+	color: #444054;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.lan_btn img {
+	width:32px;
+	height:32px;
+	border-radius: 32px;
+	background-repeat: no-repeat;
+}
+.overview_btn {
+	background-color: rgba(58, 196, 125, 0.1);
+}
+.overview_btn i {
+	color: rgb(58, 196, 125);
+}
+.header_divider {
+	border-left:1px solid;
+	border-color: #e3e3e3;
+	height:30px;
+}
+.profile_btn {
+	width: 64px;
+	padding:0px;
+	background-color: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.profile_btn img {
+	width:42px;
+	height:42px;
+	border-radius:42px;
+}
+.profile_btn i {
+	color: rgba(73, 80, 87, 0.8);
+}
+.status_sidebar_btn {
+	background-color: white;
+	color: rgba(73, 80, 87, 0.8);
+}
