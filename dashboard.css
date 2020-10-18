@@ -47,6 +47,14 @@ button {
 }
 
 /*start css*/
+html {
+	height:100%;
+}
+#dashboard {
+	width:100%;
+	height:100vh;
+}
+/*header*/
 #header {
 	width:100%;
 	height:60px;
@@ -73,7 +81,7 @@ button {
 	width:97px;
 	background-image: url('images/logo-inverse.png');
 }
-.sidebar_btn button {
+.sidebar_btn > button {
 	background-color: white;
 }
 
@@ -130,7 +138,7 @@ button {
 .settings_btn {
 	width:122px;
 }
-.settings_btn span {
+.settings_btn > span {
 	width:22px;
 	height:22px;
 	background-color: #d92550;
@@ -162,13 +170,13 @@ button {
 .grid_btn {
 	background-color: rgba(63, 106, 216, 0.1);
 }
-.grid_btn i {
+.grid_btn > i {
 	color:rgb(63, 106, 216);
 }
 .notify_btn {
 	background-color: rgba(217, 37, 80, 0.1);
 }
-.notify_btn i {
+.notify_btn > i {
 	color:rgb(217, 37, 80);
 }
 .lan_btn {
@@ -177,7 +185,7 @@ button {
 	align-items: center;
 	justify-content: center;
 }
-.lan_btn img {
+.lan_btn > img {
 	width:32px;
 	height:32px;
 	border-radius: 32px;
@@ -186,7 +194,7 @@ button {
 .overview_btn {
 	background-color: rgba(58, 196, 125, 0.1);
 }
-.overview_btn i {
+.overview_btn > i {
 	color: rgb(58, 196, 125);
 }
 .header_divider {
@@ -203,15 +211,140 @@ button {
 	align-items: center;
 	justify-content: space-between;
 }
-.profile_btn img {
+.profile_btn > img {
 	width:42px;
 	height:42px;
 	border-radius:42px;
 }
-.profile_btn i {
+.profile_btn > i {
 	color: rgba(73, 80, 87, 0.8);
 }
 .status_sidebar_btn {
 	background-color: white;
 	color: rgba(73, 80, 87, 0.8);
+}
+
+/*body*/
+#body {
+	width:100%;
+	height:calc(100vh - 60px);
+	padding-top:60px;
+	overflow-y: hidden;
+
+	display: flex;
+}
+
+/*sidebar*/
+.sidebar {
+	width:20%;
+	height:inherit;
+
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+.sidebar button {
+	background-color: white;
+}
+.sidebar > div {
+	padding-top: 5px;
+	padding-bottom: 20px;
+	flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+    overflow-y: auto;
+}
+.sidebar_block {	
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sidebar_block > div {
+	width:80%;
+	min-height: 40px;
+	border-radius: 5px;
+}
+.sidebar_block_title {
+	height:40px;
+	color: #3f6ad8;
+	font-size: 14px;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-shrink: 0;
+}
+.sidebar_block_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: ; 
+}
+.sidebar_block_btn {
+	height: 40px;
+	margin-bottom: 2px;
+	font-size: 14px;
+	color: #343a40;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+}
+.sidebar_block_btn-selected {
+	font-weight: bold;
+}
+.sidebar_block_btn > div {
+
+}
+.sidebar_block_btn > div > i{
+	width: 34px;
+	opacity: 0.3;
+
+	display: inline-flex;
+	justify-content: center;
+}
+.sidebar_block_btn > i {
+	opacity: 0.3;
+	padding-right:10px;
+}
+.sidebar_block_list {
+	padding-top: 7px;
+	padding-left: 16px;
+	margin-left: 16px;
+	border-left: 3px solid;
+	border-color: rgb(224, 243, 255);
+	border-radius: 1px
+}
+.sidebar_block_list > button {
+	height: 32px;
+	width:100%;
+	padding-left:15px;
+	font-size: 14px;
+	border-radius: 5px;
+
+	display: flex;
+	align-items: center;
+}
+.sidebar_block_list-selected {
+	font-weight: bold;
+	background-color: rgb(224, 243, 255) !important;
+	color: #3f6ad8;
+}
+
+/*content*/
+.dashboard_content {
+	width:80%;
+	height:inherit;
+	background-color: #f1f4f6;
+
+	display: flex;
+	flex-direction: column;
+}
+.dashboard_content > div {
+	flex-grow: 1;
+    overflow-y: auto;
+}
+
+.dashboard_content_header {
+	
 }
