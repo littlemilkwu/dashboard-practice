@@ -568,6 +568,7 @@ body {
 	border-radius: 50px;
 	color: white;
 	font-size: 0.95rem !important;
+	box-shadow: 0 0.125rem 0.625rem rgba(63,106,216,0.4), 0 0.0625rem 0.125rem rgba(63,106,216,0.5);
 }
 .portfolio_footer > button > i {
 	padding-right: 5px;
@@ -660,4 +661,25 @@ body {
 	border-radius: 5px;
 	color: white;
 	font-size: 80%;
+}
+
+/*float_icon*/
+.float_icon {
+	width: 52px;
+	height: 52px;
+	background-color: #f7b924;
+	border-radius: 26px;
+	position: fixed;
+	right: 30px;
+	bottom: 85px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.float_icon > button {
+	background-color: transparent;
+}
+.float_icon > button > i {
+	animation: fa-spin 2s infinite linear;
 }
