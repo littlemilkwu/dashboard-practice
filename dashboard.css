@@ -680,6 +680,3 @@ body {
 .float_icon > button {
 	background-color: transparent;
 }
-.float_icon > button > i {
-	animation: fa-spin 2s infinite linear;
-}
