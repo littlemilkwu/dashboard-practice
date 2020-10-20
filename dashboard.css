@@ -429,8 +429,22 @@ body {
 	flex-direction: column;
 	align-items: 100%
 }
-.dashboard_content_row {
+.dashboard_row {
 	margin-bottom: 30px;
+}
+.switch_content_row {
+	margin-top: 30px;
+}
+.switch_content_btn {
+	width: 100px;
+	height: 37px;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.switch_content_btn-select {
+	color: white;
+	background-color: rgb(63, 106, 216);
+	box-shadow: 0 16px 26px -10px rgba(63,106,216,0.56), 0 4px 25px 0px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(63,106,216,0.2);
 }
 .card_portfolio {
 	height: 259px;
@@ -557,4 +571,93 @@ body {
 }
 .portfolio_footer > button > i {
 	padding-right: 5px;
+}
+
+.dashboard_content_footer {
+	height: 60px;
+	padding: 0 24px 0 12px;
+	background-color: rgb(250, 251, 252);
+	box-sizing: border-box;
+	border-top: 1px solid;
+	border-top-color: rgb(233, 236, 239);
+
+	display: flex;
+	justify-content: space-between;
+}
+.dashboard_content_footer button {
+	background-color: transparent;
+}
+.dashboard_content_footer-left {
+
+	display: flex;
+	align-items: center;
+}
+.dashboard_content_footer-left > button > i {
+	margin: 5px;
+}
+.footer_btn-left {
+	width: 44px;
+	height: 44px;
+	color: #d92550;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer_btn-left > div {
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #d92550;
+}
+.footer_btn-center {
+	width: 44px;
+	height: 44px;
+	color: #3ac47d;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+.footer_btn-right {
+	width: 44px;
+	height: 44px;
+	color: #f7b924;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer_btn-right > div {
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	background-color: #f7b924;
+}
+.footer_divider {
+	margin: 0 10px;
+	border-left:1px solid;
+	border-color: rgb(233, 236, 239);
+	height:40px;
+}
+.dashboard_content_footer-right {
+	display: flex;
+	align-items: center;
+}
+.footer_link {
+	font-size: 0.88rem;
+	color: #6c757d;
+	padding: 8px 10px;
+}
+.footer_link > i {
+	margin-left: 8px;
+}
+.footer_link_hl-black {
+	background-color: #343a40;
+	padding: 5px 10px;
+	margin-left: 4px;
+	border-radius: 5px;
+	color: white;
+	font-size: 80%;
 }
