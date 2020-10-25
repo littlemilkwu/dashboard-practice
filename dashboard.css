@@ -51,6 +51,7 @@ html {
 	height:100%;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	font-size: 0.88rem;
+	line-height: 1.5;
 }
 body {
 	color: #495057;
@@ -425,7 +426,7 @@ body {
 }
 .dashboard_content_center {
 	width: inherit;
-	padding: 0 30px 30px 30px;
+	padding: 0 30px;
 
 	display: flex;
 	flex-direction: column;
@@ -446,6 +447,7 @@ body {
 	height: 37px;
 	margin-right: 10px;
 	border-radius: 5px;
+	background-color: transparent;
 }
 .switch_content_btn-select {
 	color: white;
@@ -455,20 +457,23 @@ body {
 
 .card-l {
 	background-color: white;
-	min-height: 200px;
+	min-height: 100px;
 	width: 100%;
 	box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+	border-radius: 3px;
 }
 .card-m {
-	min-height: 200px;
+	min-height: 100px;
 	width: calc(50% - 15px);
 	background-color: white;
 	box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+	border-radius: 3px;
 }
 .card-s {
-	min-height: 200px;
+	min-height: 100px;
 	width: calc(25% - 23px);
 	background-color: white;
+	border-radius: 3px;
 }
 .card-green {
 	box-shadow: 0 0.46875rem 2.1875rem rgba(58,196,125,0.03), 0 0.9375rem 1.40625rem rgba(58,196,125,0.03), 0 0.25rem 0.53125rem rgba(58,196,125,0.05), 0 0.125rem 0.1875rem rgba(58,196,125,0.03);
@@ -1235,7 +1240,7 @@ td{
 	flex-direction: column;
 }
 .chatroom_body > div {
-	padding: 24px;
+	padding: 24px 24px 0 24px;
 	flex-grow: 1;
 	overflow-y: scroll;
 
@@ -1248,10 +1253,24 @@ td{
 	display: flex;
 	justify-content: space-between;
 }
+.chatroom_img-left {
+	position: relative;
+}
 .chatroom_img-left > img {
 	width: 38px;
 	height: 38px;
 	border-radius: 5px;
+}
+.chatroom_img-left > div {
+	width: 12px;
+	height: 12px;
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 12px;
+	background-color: #3ac47d;
+	position: absolute;
+	right: -3px;
+	top: 28px;
 }
 .chatroom_message-left {
 	margin-left: 10px;
@@ -1281,10 +1300,24 @@ td{
 	display: flex;
 	justify-content: space-between;
 }
-.chatroom_img-right > img{
+.chatroom_img-right {
+	position: relative;
+}
+.chatroom_img-right > img {
 	width: 38px;
 	height: 38px;
 	border-radius: 5px;
+}
+.chatroom_img-right > div {
+	width: 12px;
+	height: 12px;
+	border: 2px solid white;
+	box-sizing: border-box;
+	border-radius: 12px;
+	background-color: #3ac47d;
+	position: absolute;
+	right: -3px;
+	top: 28px;
 }
 .chatroom_message-right {
 	margin-right: 10px;
@@ -1312,7 +1345,6 @@ td{
 .chatroom_message-right > span > i {
 	margin-right: 7px;
 }
-
 .chatroom_footer {
 	height: 56px;
 	padding: 12px 20px;
@@ -1332,7 +1364,49 @@ td{
 	border: 1px solid rgba(26, 54, 126, 0.25);
 	border-radius: 3px;
 }
+.sixbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+.sixbox > div {
+	width: 33.33%;
+	height: 68px;
+	padding: 12px 20px;
+	box-sizing: border-box;
 
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+.sixbox-top {
+	border-bottom: 1px solid rgb(73, 80, 87, 0.125);
+}
+.sixbox-bottom {
+	border-top: 1px solid rgb(73, 80, 87, 0.125);
+}
+.sixbox_header {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.sixbox_des {
+	opacity: 0.5;
+}
+.sixbox-right {
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+.sixbox-green {
+	color: #3ac47d !important;
+}
+.sixbox-red {
+	color: #d92550 !important;
+}
+.sixbox-blue {
+	color: #3f6ad8 !important;
+}
+.sixbox-yellow {
+	color: #f7b924 !important;
+}
 
 .dashboard_content_footer {
 	height: 60px;
