@@ -1014,7 +1014,7 @@ tr {
 	height: 38px;
 	box-sizing: border-box;
 }
-.deep_tr {
+tbody > tr:nth-child(odd){
 	background-color: rgba(0,0,0,0.03);
 }
 
